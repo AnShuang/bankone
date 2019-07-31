@@ -5,13 +5,16 @@
 </template>
 
 <script>
-
+import { getData } from '@/mock/mockdata.js'
 export default {
   name: 'home',
   data () {
     return {
-      msg: 'anshuang'
+      msg: []
     }
+  },
+  created () {
+    this.msg = getData()
   }
 }
 </script>
